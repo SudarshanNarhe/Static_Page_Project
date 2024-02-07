@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/152/152752.png">
+  <title>iPhone Sales Project</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Chart.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="staticpage.css" />
+  <style>
+    /* Your custom styles go here */
+  </style>
+</head>
+<body>
+    <header class="div1">
+        <select name="products" class="text-dark rounded" style="width: 9%" onchange="directToPage(this)">
+          <option value="#select" style="text-align: center;">Select</option>
+          <option value="iphone11.htm" onclick="iPhone11">iPhone11</option>
+          <option value="iphone11pro.html">iPhone11 Pro</option>
+          <option value="iphone12.html">iPhone12</option>
+          <option value="iphone12pro.html">iPhone12 Pro</option>
+          <option value="iphone13.html">iPhone13</option>
+          <option value="iphone13pro.html">iPhone13 Pro</option>
+          <option value="iphone14.html">iPhone14</option>
+          <option value="iphone14pro.html">iPhone14 Pro</option>
+          <option value="staticpage.html">iPhone15</option>
+          <option value="iphone15pro.html">iPhone15 Pro</option>
+          <option value="iphone15promax.html">iPhone15 Pro Max</option>
+        </select>
+  
+        <script>
+          function directToPage(selectElement){
+            var selectedOption = selectElement.value;
+              if (selectedOption) {
+                  window.location.href=selectedOption
+              }
+          }
+        </script>
+  
+  <div style="display: flex; align-items: center; " >
+    <input
+      type="search" 
+      class="form-control me short-search search-icon"
+      name="search"
+      placeholder="Search for another products"
+      />
+    <button id="SearchButton" class="button btn btn-warning"><b>Search</b></button>
+</div>
+        <ul>
+          <li class="a"><a href="home.html">Home</a></li>
+          <li class="a"><a href="#aboutus">AboutUs</a></li>
+          <li class="a"><a href="#service">Services</a></li>
+          <li class="a"><a href="#contact">Contact</a></li>
+          <li class="a"><a href="dashBoard.html">Dashboard</a></li>
+          <li class="a"><a href="Feedback.html">Feedback</a></li>
+        </ul>
+      </header>
+<div class="chart">
+<div class="container">
+  <div class="row mt-10px">
+    <!-- <div class="col-md-6 mt-10px">
+      <canvas id="pieChart" width="300" height="300"></canvas>
+    </div> -->
+    <div class="col-md-6 m-10px">
+      <canvas id="barChart" width="200" height="200"></canvas>
+    </div>
+    <div class="col-md-6 m-10px">
+      <canvas id="lineChart" width="200" height="200"></canvas>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script>
+  // Sample data for iPhone sales
+  const salesData = {
+    months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    sales: [150, 200, 180, 220, 250, 300, 280, 320, 270, 230, 200, 180],
+  };
+
+  // Function to create and render the pie chart
+  // function renderPieChart() {
+  //   const ctx = document.getElementById('pieChart').getContext('2d');
+  //   new Chart(ctx, {
+  //     type: 'pie',
+  //     data: {
+  //       labels: salesData.months,
+  //       datasets: [{
+  //         data: salesData.sales,
+  //         backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4CAF50', '#FF5733', '#8E44AD', '#3498DB', '#E74C3C', '#2ECC71', '#F39C12', '#9B59B6', '#1ABC9C'],
+  //       }],
+  //     },
+  //     options: {
+  //       title: {
+  //         display: true,
+  //         text: 'iPhone Sales by Month (Pie Chart)',
+  //       },
+  //     },
+  //   });
+  // }
+
+  // Function to create and render the bar chart
+  function renderBarChart() {
+    const ctx = document.getElementById('barChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: salesData.months,
+        datasets: [{
+          label: 'iPhone Sales',
+          data: salesData.sales,
+          backgroundColor: '#3498DB',
+        }],
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'iPhone Sales by Month (Bar Chart)',
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+          },
+        },
+      },
+    });
+  }
+
+  // Function to create and render the line chart
+  function renderLineChart() {
+    const ctx = document.getElementById('lineChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: salesData.months,
+        datasets: [{
+          label: 'iPhone Sales',
+          data: salesData.sales,
+          borderColor: '#FF5733',
+          fill: false,
+        }],
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'iPhone Sales by Month (Line Chart)',
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+          },
+        },
+      },
+    });
+  }
+
+  // Call the functions to render the charts
+ // renderPieChart();
+  renderBarChart();
+  renderLineChart();
+</script>
+<footer>
+    <div style="display: flex; justify-content: space-evenly; background-color: rgb(47, 44, 53);" >
+    <div style="float: none; left: 10px; margin-top: 1.5rem;">
+      <ul style="color: aliceblue;">
+        <li style="list-style-type:none; text-align: left;"><p><b>Get to know us</b></p></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#aboutus">About US</a></li>
+        <li><a href="#investor">Investor Relations</a></li>  
+      </ul>
+    </div>
+    <div style="float: none; left: 10px;margin-top: 1.5rem;">
+      <ul style="color: aliceblue;">
+        <li style="list-style-type:none; text-align: left;"><p><b>Customer Policies</b></p></li>
+        <li><a href="#careers">FAQ</a></li>
+        <li><a href="#blog">T&C</a></li>
+        <li><a href="#aboutus">Shipping</a></li>
+        <li><a href="#investor">Cancellation</a></li> 
+        <li><a href="#aboutus">Returns</a></li>
+        <li><a href="#investor">Privacy Policy</a></li> 
+        <li><a href="#aboutus">Track Orders</a></li>   
+      </ul>
+    </div>
+    <div style="float: none; left: 10px;margin-top: 1.5rem;">
+      <ul style="color: aliceblue;">
+        <li style="list-style-type:none; text-align: left;"><p><b>Connect With US</b></p></li>
+        <li><a href="#facebook">Facebook</a></li>
+        <li><a href="#twitter">Twitter</a></li>
+        <li><a href="#instagram">Instagram</a></li>
+      </ul>
+    </div>
+    <div style="float: none; left: 10px;margin-top: 1.5rem;">
+      <ul style="color: aliceblue;">
+        <li style="list-style-type:none; text-align: left;"><p><b>For Goverments And Education</b></p></li>
+        <li><a href="#careers">Shop For Goverment</a></li>
+        <li><a href="#blog">Shop For Military</a></li>
+        <li><a href="#aboutus">Apple And Education</a></li>
+        <li><a href="#investor">Shop For College</a></li>  
+      </ul>
+    </div> 
+    </div>
+    <div class="text-center text-white py-3 " style="background-color: black;" >
+              <p>Contact us at <a href="#mailto:info@yourshoppingapp.com">info@yourshoppingapp.com</a></p>
+              <p>&copy; 2024 Your Online Shopping App. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

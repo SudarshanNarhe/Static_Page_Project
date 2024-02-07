@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iphone11 Pro</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/152/152752.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="staticpage.css" />
+
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <header class="div1">
+    <select name="products" class="text-dark rounded" style="width: 9%" onchange="directToPage(this)">
+      <option value="#select" style="text-align: center;">Select</option>
+      <option value="iphone11.htm" onclick="iPhone11">iPhone11</option>
+      <option value="iphone11pro.html">iPhone11 Pro</option>
+      <option value="iphone12.html">iPhone12</option>
+      <option value="iphone12pro.html">iPhone12 Pro</option>
+      <option value="iphone13.html">iPhone13</option>
+      <option value="iphone13pro.html">iPhone13 Pro</option>
+      <option value="iphone14.html">iPhone14</option>
+      <option value="iphone14pro.htm">iPhone14 Pro</option>
+      <option value="staticpage.html">iPhone15</option>
+      <option value="iphone15pro.html">iPhone15 Pro</option>
+      <option value="iphone15promax.html">iPhone15 Pro Max</option>
+    </select>
+
+    <script>
+      function directToPage(selectElement) {
+        var selectedOption = selectElement.value;
+        if (selectedOption) {
+          window.location.href = selectedOption
+        }
+      }
+    </script>
+    <div style="display: flex; align-items: center; ">
+      <input type="search" class="form-control me short-search search-icon" name="search"
+        placeholder="Search for another products" />
+      <button id="SearchButton" class="button btn btn-warning"><b>Search</b></button>
+    </div>
+    <ul id="searchResults" style="display: none;">
+      <!-- Display search results here -->
+    </ul>
+    <ul>
+      <li class="a"><a href="home.html">Home</a></li>
+      <li class="a"><a href="#aboutus">AboutUs</a></li>
+      <li class="a"><a href="#service">Services</a></li>
+      <li class="a"><a href="#contact">Contact</a></li>
+      <li class="a"><a href="dashBoard.html">Dashboard</a></li>
+      <li class="a"><a href="Feedback.html">Feedback</a></li>
+    </ul>
+  </header>
+  <div class="appleName">
+    <br><h2 class="p-2" style="color: rgb(11, 11, 11);">
+      <i class="fab fa-apple" style="width: 30px; font-size:larger;"></i> iPhone 11Pro (Silver, 128GB)
+    </h2>
+    <h3>RS.79,999</h3>
+    <p>+RS.199 Secured Packaging Fee</p><br>
+  </div>
+  <div class="div2 p-2" style="
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        /* background-color: rgb(240, 234, 227); */
+      ">
+    <!-- Left side with iPhone image -->
+    <div style="display: flex;">
+      <div style="width: 44%;height: auto; text-align: center">
+        <img class="img rounded-10" style="width: 70%; height: auto"
+            src="https://rukminim2.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/e/b/u/iphone-11-pro-max-64-a-mwhg2hn-a-apple-0-original-imafkg2fg3evmhuy.jpeg?q=70&crop=false"
+            alt="iphone11pro" />
+
+        <!-- Buttons below iPhone image -->
+        <div class="container bottom p-2">
+          <form>
+            <button type="submit" class="btn btn-warning lg">
+              <i class="fas fa-shopping-cart"></i> <b>Add To Cart</b>
+            </button>
+            <button type="submit" class="btn btn-success lg">  <i class="fas fa-bolt"></i> <b> Buy Now</b></button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Middle with Specifications -->
+      <div style="width: 100%; text-align: center; margin-top: 0%">
+        <h3 class="p-2 spHead">
+          Specifications
+        </h3>
+        <br />
+        <div class="row px-2 mx-2" style="text-align: left; line-height: 2.5; border: 0.5px solid black">
+          <!-- Specifications content here -->
+          <div class="col-4">
+            <span><b>Model</b></span>
+          </div>
+          <div class="col-lg">Apple</div>
+          <div class="col-4">
+            <span><b>Model Name</b></span>
+          </div>
+          <div class="col-lg">iPhone11 Pro</div>
+          <div class="col-4">
+            <span><b>Color</b></span>
+          </div>
+          <div class="col-lg">silver</div>
+          <div class="col-4">
+            <span><b>GPU</b></span>
+          </div>
+          <div class="col-lg">5 Core</div>
+          <div class="col-4">
+            <span><b>Oprating System</b></span>
+          </div>
+          <div class="col-lg">iOS17</div>
+          <div class="col-4">
+            <span><b>Primary Camera</b></span>
+          </div>
+          <div class="col-lg">48MP + 12MP</div>
+          <div class="col-4">
+            <span><b>Secondary Camera</b></span>
+          </div>
+          <div class="col-lg">12MP Front</div>
+          <div class="col-4">
+            <span><b>Battery</b></span>
+          </div>
+          <div class="col-lg">3349 mAh</div>
+          <div class="col-4">
+            <span><b>Width</b></span>
+          </div>
+          <div class="col-lg">71.6mm</div>
+          <div class="col-4">
+            <span><b>Height</b></span>
+          </div>
+          <div class="col-lg">147.6mm</div>
+          <div class="col-4">
+            <span><b>Depth</b></span>
+          </div>
+          <div class="col-lg">7.8mm</div>
+          <div class="col-4">
+            <span><b>Weight</b></span>
+          </div>
+          <div class="col-lg">171g</div>
+          <div class="col-4">
+            <span><b>Network Type</b></span>
+          </div>
+          <div class="col-lg">5G,4G,3G,2G</div>
+          <div class="col-4">
+            <span><b>Bluetooth Version</b></span>
+          </div>
+          <div class="col-lg">v5.3</div>
+          <div class="col-4">
+            <span><b>Warranty Summary</b></span>
+          </div>
+          <div class="col-lg">
+            1 Year Warranty for Phone and 6 Months Warranty for In-Box
+            Accessories
+          </div>
+        </div>
+
+        <!-- Right side with special offer image and available offers -->
+        <div style="display: flex;" class="mx-2 my-3">
+          <div  style="width: 100%; text-align: center; margin: auto;">
+            <img src="https://png.pngtree.com/png-vector/20230214/ourmid/pngtree-special-offer-png-image_6601226.png"
+             class="animated-image" style="width: 60%;height: auto; text-align: center;" alt="special Offer" />
+          </div>
+          <div class="container paraStyle mx-2" style="padding: 14px;">
+            <h4 class="p-2 avaOfferHead">
+              <i class="fas fa-bullhorn" style="color: rgb(12, 15, 13);"></i>  Available offers</h4>
+            <br>
+            <p>
+              <b><i class="fas fa-tags"style="color: rgb(38, 71, 201);"></i> Bank Offer </b>10% off on ICICI Bank Credit Card and EMI Transactions
+            </p>
+            <p><i class="fas fa-tags" style="color: rgb(38, 71, 201);"></i><b> Bank Offer </b> 5% Cashback on Flipkart Axis Bank Card</p>
+            <p><i class="fas fa-tags"style="color: rgb(38, 71, 201);"></i> <b> Bank Offer </b> ₹750 off on UPI Transactions</p>
+            <p><i class="fas fa-tags"style="color: rgb(38, 71, 201);"></i> <b> Extra 10% Off</b> On Combo Mobile & Mobile Back Covers</p>
+            <p><i class="fas fa-tags"style="color: rgb(38, 71, 201);"></i> <b>Extra 10% Off</b> On Combo Mobile & Mobile Back Covers</p>
+            <p><i class="fas fa-tags"style="color: rgb(38, 71, 201);"></i> <b> Special Price</b> Get extra ₹11401 off (price inclusive of cashback/coupon)</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+
+  <div style="text-align: center">
+   
+    <h2 class="p-2" style="color: rgb(11, 11, 11); background-color: rgb(151, 203, 71); letter-spacing: 1.4px;">OTHER PRODUCTS</h2>
+    <div class="row">
+      <!-- Photo 1 -->
+      <div class="col-md-4">
+        <a href="iphone11.htm">
+          <img
+            src="https://rukminim2.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/k/y/d/iphone-11-256-u-mwm82hn-a-apple-0-original-imafkg25mhaztxns.jpeg?q=70&crop=false"
+            alt="iphone11" class="img-fluid mb-6" />
+          <h5>iphone 11</h5>
+        </a>
+      </div>
+
+      <!-- Photo 2 -->
+      <!-- <div class="col-md-4">
+        <a href="iphone11pro.html">
+          <img
+            src="https://rukminim2.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/e/b/u/iphone-11-pro-max-64-a-mwhg2hn-a-apple-0-original-imafkg2fg3evmhuy.jpeg?q=70&crop=false"
+            alt="iphone11pro" class="img-fluid mb-3" />
+          <h5>iphone 11 Pro</h5>
+        </a>
+      </div> -->
+
+      <!-- Photo 3 -->
+      <div class="col-md-4">
+        <a href="iphone12.html">
+          <img
+            src="https://rukminim2.flixcart.com/image/416/416/kg8avm80/mobile/y/7/n/apple-iphone-12-dummyapplefsn-original-imafwg8dpyjvgg3j.jpeg?q=70&crop=false"
+            alt="iphone12" class="img-fluid mb-3" />
+          <h5>iphone 12</h5>
+        </a>
+      </div>
+      <!-- Photo 4 -->
+      <div class="col-md-4">
+        <a href="iphone12pro.html">
+          <img
+            src="https://rukminim2.flixcart.com/image/416/416/kg8avm80/mobile/u/q/d/apple-iphone-12-pro-dummyapplefsn-original-imafwgbrbzjgug4j.jpeg?q=70&crop=false"
+            alt="iphone12pro" class="img-fluid mb-3" />
+          <h5>iphone 12 Pro</h5>
+        </a>
+      </div>
+
+      <!-- Photo 5 -->
+      <div class="col-md-4">
+        <a href="iphone13.html">
+          <img
+            src="https://rukminim2.flixcart.com/image/416/416/ktketu80/mobile/2/y/o/iphone-13-mlpk3hn-a-apple-original-imag6vpyur6hjngg.jpeg?q=70&crop=false"
+            alt="iphone13" class="img-fluid mb-3" />
+          <h5>iphone 13</h5>
+        </a>
+      </div>
+
+      <!-- Photo 6 -->
+      <div class="col-md-4">
+        <a href="iphone13pro.html">
+          <img
+            src="https://rukminim2.flixcart.com/image/312/312/ktketu80/mobile/z/h/v/iphone-13-pro-mlvq3hn-a-apple-original-imag6vpc6mx3zwhz.jpeg?q=70"
+            alt="iphone13pro" class="img-fluid mb-3" />
+          <h5>iphone 13 Pro</h5>
+        </a>
+      </div>
+
+      <!-- Photo 7 -->
+      <div class="col-md-4">
+        <a href="iphone14.html">
+          <img
+            src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/3/5/l/-original-imaghx9qmgqsk9s4.jpeg?q=70&crop=false"
+            alt="iphone14" class="img-fluid mb-3" />
+          <h5>iphone 14</h5>
+        </a>
+      </div>
+
+      <!-- Photo 8 -->
+      <div class="col-md-4">
+        <a href="iphone14pro.htm">
+          <img
+            src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/h/r/e/-original-imaghxeeme2n7hy7.jpeg?q=70&crop=false"
+            alt="iphone14pro" class="img-fluid mb-3" />
+          <h5>iphone 14 Pro</h5>
+        </a>
+      </div>
+      <!-- Photo 9 -->
+      <div class="col-md-4">
+        <a href="staticpage.html">
+          <img
+            src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/k/l/l/-original-imagtc5fz9spysyk.jpeg?q=70&crop=false"
+            alt="iphone15"
+            class="img-fluid mb-3"
+          />
+          <h5>iphone 15</h5>
+        </a>
+      </div>
+      <!-- Photo 10 -->
+      <div class="col-md-4">
+        <a href="iphone15pro.html">
+          <img
+            src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/g/x/h/-original-imagtc3k6zztrhnb.jpeg?q=70&crop=false"
+            alt="iphone 15 pro" class="img-fluid mb-3" />
+          <h5>iphone 15 Pro</h5>
+        </a>
+      </div>
+
+      <!-- Photo 11 -->
+      <div class="col-md-4">
+        <a href="iphone15promax.html">
+          <img
+            src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/m/h/c/-original-imagtc3h9h6kpbkc.jpeg?q=70&crop=false"
+            alt="iphone 15 pro max" class="img-fluid mb-3" />
+          <h5>iphone 15 Pro Max</h5>
+        </a>
+      </div>
+    </div>
+  </div><br>
+  <footer>
+    <div class="footdiv1">
+      <div style="float: none; left: 10px; margin-top: 1.5rem;">
+        <ul style="color: aliceblue;">
+          <li style="list-style-type:none; text-align: left;">
+            <p><b>Get to know us</b></p>
+          </li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#aboutus">About US</a></li>
+          <li><a href="#investor">Investor Relations</a></li>
+        </ul>
+      </div>
+      <div style="float: none; left: 10px;margin-top: 1.5rem;">
+        <ul style="color: aliceblue;">
+          <li style="list-style-type:none; text-align: left;">
+            <p><b>Customer Policies</b></p>
+          </li>
+          <li><a href="#careers">FAQ</a></li>
+          <li><a href="#blog">T&C</a></li>
+          <li><a href="#aboutus">Shipping</a></li>
+          <li><a href="#investor">Cancellation</a></li>
+          <li><a href="#aboutus">Returns</a></li>
+          <li><a href="#investor">Privacy Policy</a></li>
+          <li><a href="#aboutus">Track Orders</a></li>
+        </ul>
+      </div>
+      <div style="float: none; left: 10px;margin-top: 1.5rem;">
+        <ul style="color: aliceblue;">
+          <li style="list-style-type:none; text-align: left;">
+            <p><b>Connect With US</b></p>
+          </li>
+          <li><a href="#facebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="#twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="#instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+        </ul>
+      </div>
+      <div style="float: none; left: 10px;margin-top: 1.5rem;">
+        <ul style="color: aliceblue;">
+          <li style="list-style-type:none; text-align: left;">
+            <p><b>For Goverments And Education</b></p>
+          </li>
+          <li><a href="#careers">Shop For Goverment</a></li>
+          <li><a href="#blog">Shop For Military</a></li>
+          <li><a href="#aboutus">Apple And Education</a></li>
+          <li><a href="#investor">Shop For College</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center text-white py-3 " style="background-color: black;">
+      <p>Contact us at  <i class="fas fa-envelope"></i>  <a href="#mailto:info@yourshoppingapp.com">info@yourshoppingapp.com</a></p>
+      <p>&copy; 2024 Your Online Shopping App. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
